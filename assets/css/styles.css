@@ -1,0 +1,147 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del Menú de Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos del Carrusel */
+.carousel {
+    width: 80%; /*ANCHO*/
+    margin:auto; /*CENTRADO HORIZONTAL*/
+    /* Estilos del carrusel */
+}
+
+/* Estilos de la Barra de Búsqueda */
+.barrabusqueda {
+    text-align: center;
+    margin: 20px 0;
+    background-color: aqua;
+
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 60%;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Centrado horizontal y espacio vertical */
+    padding: 0 20px; /* Espaciado interno */
+  }
+  
+  .main-content h2 {
+    margin-bottom: 20px; /* Espaciado inferior para títulos */
+  }
+  
+  .main-content p {
+    line-height: 1.6; /* Espaciado entre líneas */
+  }
+  
+  .main-content img {
+    max-width: 100%; /* Imágenes responsivas */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+
+/* Estilos del Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para la página de contacto */
+
+/* Estilos para la información de contacto */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
