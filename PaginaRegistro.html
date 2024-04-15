@@ -33,10 +33,10 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <!-- Formulario de Registro -->
-                <div class="card">
+                <div class="card" id="registro">
                     <div class="card-body">
                         <h2 class="card-title">Registrarse</h2>
-                        <form action="#" method="POST">
+                        <form id="formRegistro">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre:</label>
                                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -58,10 +58,10 @@
         <div class="row justify-content-center mt-3">
             <div class="col-lg-6">
                 <!-- Formulario de Inicio de Sesión -->
-                <div class="card">
+                <div class="card" id="inicioSesion">
                     <div class="card-body">
                         <h2 class="card-title">Iniciar Sesión</h2>
-                        <form action="#" method="POST">
+                        <form action="#" method="POST" id="formInicioSesion">
                             <div class="mb-3">
                                 <label for="correo_login" class="form-label">Correo Electrónico:</label>
                                 <input type="email" class="form-control" id="correo_login" name="correo_login" required>
@@ -71,8 +71,17 @@
                                 <input type="password" class="form-control" id="contrasena_login" name="contrasena_login" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                            <div id="errorInicioSesion" class="alert alert-danger" style="display: none;"></div>
                         </form>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Indicadores visuales de autenticación -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-6">
+                <div id="indicadoresAutenticacion" style="display: none;">
+                    <p id="estadoAutenticacion"></p>
                 </div>
             </div>
         </div>
@@ -84,6 +93,36 @@
             <p>&copy; 2024 Grupo Cero - Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Función para manejar el registro de usuarios
+        document.getElementById('formRegistro').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Aquí puedes agregar el código para registrar al usuario en tu base de datos
+            // Por ahora, solo mostraremos un mensaje de éxito
+            document.getElementById('registro').style.display = 'none';
+            document.getElementById('indicadoresAutenticacion').style.display = 'block';
+            document.getElementById('estadoAutenticacion').innerText = '¡Registro exitoso!';
+        });
+
+        // Función para manejar el inicio de sesión de usuarios
+        document.getElementById('formInicioSesion').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // código para iniciar sesión del usuario
+            var correo = document.getElementById('correo_login').value;
+             var contrasena = document.getElementById('contrasena_login').value;
+            if (correo === 'usuario@correo.com' && contrasena === 'contraseña') {
+                // Inicio de sesión exitoso
+                document.getElementById('inicioSesion').style.display = 'none';
+                document.getElementById('indicadoresAutenticacion').style.display = 'block';
+                document.getElementById('estadoAutenticacion').innerText = '¡Inicio de sesión exitoso!';
+             } else {
+                // Inicio de sesión incorrecto, mostramos el mensaje de error
+                document.getElementById('errorInicioSesion').style.display = 'block';
+                document.getElementById('errorInicioSesion').innerText = 'Correo electrónico o contraseña incorrectos. Por favor, inténtalo de nuevo.';
+             }
+});
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

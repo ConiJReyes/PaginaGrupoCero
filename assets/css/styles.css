@@ -145,9 +145,21 @@ body {
 }
 
 
-/*Pagina de artistas*/
-/* Establecer el tamaño de las imágenes de los artistas */
-.img-artista {
-    width: 100%;
-    height: 50%; /* Esto mantendrá la proporción original */
+/*PAGINA REGISTRO Y LOGIN*/
+/* Estilos para los formularios */
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Estilos para los botones */
+.btn {
+    margin-top: 10px;
+    background-color: beige;
+    color:#333
+
+}
+
+/* Estilos para los mensajes de error */
+.alert-danger {
+    margin-top: 10px;
 }
