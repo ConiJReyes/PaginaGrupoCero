@@ -79,13 +79,7 @@ body {
   }
   
 
-/* Estilos del Footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
+
 
 /* Estilos para la información de contacto */
 .contact-info {
@@ -162,4 +156,25 @@ body {
 /* Estilos para los mensajes de error */
 .alert-danger {
     margin-top: 10px;
+}
+
+
+/*productos*/
+.tituloProductos {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+    /* Opcional: puedes agregar más estilos según tus necesidades */
+}
+
+.producto img {
+    width: 250px; /* Ancho específico en píxeles */
+    height: 250px; /* Altura específica en píxeles */
+}
+
+/* Estilos del Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
