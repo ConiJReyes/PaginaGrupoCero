@@ -87,8 +87,6 @@ body {
     padding: 10px 0;
 }
 
-/* Estilos para la página de contacto */
-
 /* Estilos para la información de contacto */
 .contact-info {
     background-color: #f9f9f9;
@@ -144,4 +142,12 @@ body {
 
 .contact-form button:hover {
     background-color: #0056b3;
+}
+
+
+/*Pagina de artistas*/
+/* Establecer el tamaño de las imágenes de los artistas */
+.img-artista {
+    width: 100%;
+    height: 50%; /* Esto mantendrá la proporción original */
 }
