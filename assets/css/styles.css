@@ -1,10 +1,3 @@
-/* Estilos Generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 /* Estilos del Menú de Navegación */
 .navbar {
     display: flex;
@@ -23,6 +16,7 @@ body {
     list-style-type: none;
     display: flex;
     gap: 20px;
+
 }
 
 .menu li a {
@@ -34,7 +28,6 @@ body {
 .carousel {
     width: 80%; /*ANCHO*/
     margin:auto; /*CENTRADO HORIZONTAL*/
-    /* Estilos del carrusel */
 }
 
 /* Estilos de la Barra de Búsqueda */
@@ -42,7 +35,6 @@ body {
     text-align: center;
     margin: 20px 0;
     background-color: aqua;
-
 }
 
 .search-bar input {
@@ -65,19 +57,47 @@ body {
     padding: 0 20px; /* Espaciado interno */
   }
   
-  .main-content h2 {
+.main-content h2 {
     margin-bottom: 20px; /* Espaciado inferior para títulos */
-  }
+}
   
   .main-content p {
     line-height: 1.6; /* Espaciado entre líneas */
-  }
+}
   
-  .main-content img {
+.main-content img {
     max-width: 100%; /* Imágenes responsivas */
     height: auto; /* Altura automática para mantener la proporción */
-  }
-  
+}
+
+.footer{
+    background-color: #ecbaba;
+    border: 1px solid #7a5a5a;
+    padding: 20px;
+    margin-top: 70px; /* Agrega la unidad de medida */
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
 
 
 
@@ -160,21 +180,15 @@ body {
 
 
 /*productos*/
-.tituloProductos {
-    text-align: center; /* Centrar horizontalmente */
-    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
-    /* Opcional: puedes agregar más estilos según tus necesidades */
-}
+#tproductos h1 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+} 
 
 .producto img {
     width: 250px; /* Ancho específico en píxeles */
     height: 250px; /* Altura específica en píxeles */
 }
 
-/* Estilos del Footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
+
